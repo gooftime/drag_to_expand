@@ -9,8 +9,6 @@ Showcase which you can find in example
 ```dart
 DragToExpandController _dragToExpandController;
 
-@oveDragToExpandController _dragToExpandController;
-
 @override
 void initState() {
   // Controller is used for programmatically opening and closing widget. If you don't need this feature - dont' create it.
