@@ -1,5 +1,7 @@
 # drag_to_expand
 
+This widget is easy to use to create draggable panels.
+
 Showcase which you can find in example
 
 <img src="https://raw.githubusercontent.com/gooftime/drag_to_expand/master/example/gif/ezgif-7-e1ca79878d74.gif" />
@@ -43,12 +45,12 @@ Widget build(BuildContext context) {
           child: DragToExpand(
             controller: _dragToExpandController, // controller
 
-            // Min and max size is hight or width - it depends on baseSide parameter.
-            // For example if baseSide was setted to bottom or top, then min and max size
+            // Min and max size is height or width - it depends on baseSide parameter.
+            // For example if baseSide was set to bottom or top, then min and max size
             // will be responsible for height, otherwise - it will be width.
 
             // minimum size of widget, default and in most cases sould be 0,
-            // use it when you want part of widget was visible in closed state (for tease for example)
+            // use it when you want a part of widget to be visible in closed state (as a visual teaser for example)
             minSize: 0,
 
             // maximum size
@@ -63,7 +65,7 @@ Widget build(BuildContext context) {
             // @required Widget inside GestureDetector used to open and close a child
             draggable: Center(child: Text('drag to open')),
 
-            // If you want the draggable to be changed when it's opened - set this parameter, default null
+            // If you want the draggable to be changed when it's opened - define this parameter, by default it's null.
             draggableWhenOpened: Center(child: Text('close')),
 
             // @required Just child
